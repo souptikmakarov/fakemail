@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fake Mail</title>
+	<link rel="stylesheet" type="text/css" href="styler.css">
+</head>
+<body>
+	<div class="header">
+		<span class="sitename">Fake Mailer Script</span>
+	</div>
+	<section id="content">
+		<form action="http://localhost/fakemail/mailscript.php" method="post" id="fakemailer">
+			<table>
+				<tr>
+					<td>To:</td>
+					<td><input type="email" name="mailto" placeholder="Enter the email address of the reciever" size="50"></td>
+				</tr>
+				<tr>
+					<td>From:</td>
+					<td><input type="email" name="mailfrom" placeholder="Enter the email address of the sender" size="50"></td>
+				</tr>
+				<tr>
+					<td>Subject:</td>
+					<td><input type="text" name="subject" placeholder="Enter the subject of the mail" size="50"></td>
+				</tr>
+				<tr>
+					<td>Content:</td>
+					<td><textarea rows="20" cols="80" name="content" placeholder="Enter you content here"></textarea></td>
+				</tr>
+			</table>
+			<div class="submitbutton" id="submitbutton">SUBMIT</div>
+		</form>
+	</section>
+	<div id="footer">
+		<p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="http://www.souptik.tk/" target="_blank">souptik.tk</a></p>
+	</div>
+	<script type="text/javascript" src="mail.js"></script>
+</body>
+</html>
